@@ -1,0 +1,9 @@
+cppcheck/html-report/
+vee/build
+vee/inc
+vee/lib
+tatus
+.pre-commit-config.yaml
+
+# macOS
+.DS_Store

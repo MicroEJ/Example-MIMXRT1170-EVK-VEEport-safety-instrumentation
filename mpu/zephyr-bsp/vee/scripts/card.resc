@@ -1,0 +1,30 @@
+# Copyright 2025 MicroEJ Corp. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be found with this software.
+
+:Copyright 2025 MicroEJ Corp. All rights reserved.
+:Use of this source code is governed by a BSD-style license that can be found with this software.
+
+using sysbus
+$name?="mimxrt1170_evk_b_mimxrt1176_cm7"
+mach create $name
+
+machine LoadPlatformDescription $ORIGIN/mimxrt1170_evk_b_mimxrt1176_cm7.repl
+
+
+showAnalyzer lpuart1
+
+set osPanicHook
+"""
+self.ErrorLog("OS Panicked")
+"""
+cpu0 AddSymbolHook "z_fatal_error" $osPanicHook
+
+
+macro reset
+"""
+    sysbus LoadELF $ORIGIN/../build/zephyr/zephyr.elf
+    cpu0 VectorTableOffset `sysbus GetSymbolAddress "_vector_table"`
+    cpu0 EnableZephyrMode
+"""
+
+runMacro $reset

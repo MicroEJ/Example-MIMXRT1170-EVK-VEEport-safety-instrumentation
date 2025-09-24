@@ -1,0 +1,4 @@
+[submodule "xrdc/nxpvee-mimxrt1170-evk"]
+	path = xrdc/nxpvee-mimxrt1170-evk
+	url = https://github.com/MicroEJ/nxp-vee-imxrt1170-evk.git
+	branch = main

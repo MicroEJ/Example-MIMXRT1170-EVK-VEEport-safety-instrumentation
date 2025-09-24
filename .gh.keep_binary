@@ -1,0 +1,8 @@
+mpu/gradle/wrapper/gradle-wrapper.jar
+mpu/zephyr-bsp/gradle/wrapper/gradle-wrapper.jar
+
+xrdc/apps/aiSample/src/main/resources/model/cifarnet_quant_int8.tflite 
+xrdc/gradle/wrapper/gradle-wrapper.jar  
+
+xrdc/app/SampleApplication/gradle/wrapper/gradle-wrapper.jar
+

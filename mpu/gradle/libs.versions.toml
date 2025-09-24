@@ -1,0 +1,44 @@
+# Copyright 2025 MicroEJ Corp. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be found with this software.
+
+[versions]
+microej-sdk = "1.2.0"
+pack-ui = "14.3.2"
+
+[libraries]
+# APIs
+api-bon =               { group = "ej.api", name = "bon", version = "1.4.3" }
+api-device =            { group = "ej.api", name = "device", version = "1.2.0" }
+api-drawing =           { group = "ej.api", name = "drawing", version = "1.0.5" }
+api-edc =               { group = "ej.api", name = "edc", version = "1.3.7" }
+api-fs =                { group = "ej.api", name = "fs", version = "2.1.1" }
+api-microui =           { group = "ej.api", name = "microui", version = "3.6.0" }
+api-net =               { group = "ej.api", name = "net", version = "1.1.4" }
+api-security =          { group = "ej.api", name = "security", version = "1.7.0" }
+api-ssl =               { group = "ej.api", name = "ssl", version = "2.2.3" }
+
+# Architecture
+architecture = { group = "com.microej.architecture.CM4.CM4hardfp_GCC48", name = "flopi4G25", version = "8.3.0" }
+
+
+# Packs are fetched from linux-bsp (see vee-port/build.gradle.kts)
+#pack-device =           { group = "com.microej.pack.device", name = "device-pack", version = "1.2.0" }
+#pack-ecom-network =     { group = "com.microej.pack.ecom-network", name = "ecom-network-pack", version = "1.0.0" }
+#pack-fs =               { group = "com.microej.pack", name = "fs", version = "6.0.4" }
+#pack-net =              { group = "com.microej.pack.net", name = "net-pack", version = "11.1.0" }
+#pack-ui =               { group = "com.microej.pack.ui", name = "ui-pack", version.ref = "pack-ui" }
+
+
+# Test Libraries
+junit =             { group = "ej.library.test", name = "junit", version = "1.10.3" }
+junit-platform =    { group = "org.junit.platform", name = "junit-platform-launcher", version = "1.8.2" }
+
+# Testsuites
+#testsuite-fs =                  { group = "com.microej.pack.fs", name = "fs-testsuite", version = "3.0.8" }
+testsuite-fs-openjdk =          { group = "com.microej.pack.fs", name = "fs-testsuite-openjdk", version = "1.0.1" }
+#testsuite-net =                 { group = "com.microej.pack.net", name = "net-1_1-testsuite", version = "4.1.1" }
+#testsuite-net-openjdk =         { group = "com.microej.pack.net", name = "net-1_1-testsuite-openjdk", version = "1.1.1" }
+#testsuite-security =            { group = "com.microej.pack.net", name = "security-1_7-testsuite", version = "1.7.0" }
+#testsuite-ssl =                 { group = "com.microej.pack.net", name = "net-ssl-2_2-testsuite", version = "5.0.0" }
+#testsuite-ssl-openjdk =         { group = "com.microej.pack.net", name = "net-ssl-2_2-testsuite-openjdk", version = "2.0.0" }
+#testsuite-ui =                  { group = "com.microej.pack.ui", name = "ui-testsuite", version.ref = "pack-ui" }

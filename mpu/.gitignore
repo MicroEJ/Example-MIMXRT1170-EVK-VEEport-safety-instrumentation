@@ -1,0 +1,4 @@
+.pre-commit-config.yaml
+.gradle
+app/bin
+app/build
